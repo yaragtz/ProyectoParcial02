@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter - YaraBooks</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="encabezado sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+          <a class="navbar-brand logotipo" href="index.html">YaraBooks</a>
+
+          <button
+            class="navbar-toggler boton-menu"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuNav"
+            aria-controls="menuNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="menuNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link enlace-nav" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link enlace-nav" href="reseñas.html">Reseñas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link enlace-nav" href="recomendaciones.html"
+                  >Recomendaciones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link enlace-nav active" href="usuarios.html"
+                  >Newsletter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="boletin py-5" id="boletin">
+      <div class="container">
+        <div class="contenido-boletin">
+          <div class="texto-boletin text-center mb-4">
+            <h1 class="titulo-boletin">Únete a nuestra comunidad lectora</h1>
+            <p class="subtitulo-boletin">
+              Recibe recomendaciones personalizadas y reseñas exclusivas cada
+              semana.
+            </p>
+          </div>
+
+          <div class="row justify-content-center">
+            <div
+              id="mensajeExito"
+              class="alert alert-success alert-dismissible fade mb-4"
+              role="alert"
+              style="display: none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-check-circle-fill flex-shrink-0 me-2"
+                viewBox="0 0 16 16"
+                style="display: inline-block; vertical-align: middle"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                />
+              </svg>
+              <strong></strong> <span id="textoMensaje"></span>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <form class="formulario-boletin p-4 rounded shadow" novalidate>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control campo-formulario"
+                  id="campoNombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  required
+                  minlength="2"
+                  maxlength="50"
+                />
+              </div>
+
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control campo-formulario"
+                  id="campoEmail"
+                  name="email"
+                  placeholder="Tu correo electrónico"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Por favor, ingresa un correo electrónico válido.
+                </div>
+              </div>
+
+              <div class="mb-3 form-check grupo-casilla">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="checkAcepto"
+                  name="aceptar"
+                  required
+                />
+                <label
+                  class="form-check-label etiqueta-casilla"
+                  for="checkAcepto"
+                >
+                  Acepto recibir recomendaciones de libros por correo
+                </label>
+                <div
+                  class="invalid-feedback d-block"
+                  id="checkboxError"
+                  style="display: none !important"
+                >
+                  Debes aceptar recibir recomendaciones.
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                class="btn boton boton-principal boton-completo w-100"
+              >
+                Suscribirme
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

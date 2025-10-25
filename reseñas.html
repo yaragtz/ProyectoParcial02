@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reseñas - YaraBooks</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="encabezado sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+          <a class="navbar-brand logotipo" href="index.html">YaraBooks</a>
+
+          <button
+            class="navbar-toggler boton-menu"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuNav"
+            aria-controls="menuNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="menuNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link enlace-nav" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link enlace-nav active" href="reseñas.html"
+                  >Reseñas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link enlace-nav" href="recomendaciones.html"
+                  >Recomendaciones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link enlace-nav" href="usuarios.html"
+                  >Newsletter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Página de Reseñas -->
+    <section class="pagina-resenas py-5">
+      <div class="container">
+        <div class="encabezado-resenas text-center mb-5 p-5 rounded">
+          <h1 class="titulo-seccion">Todas Nuestras Reseñas</h1>
+          <p class="subtitulo-seccion">
+            Opiniones honestas y análisis profundos de cada libro que leemos
+          </p>
+        </div>
+
+        <!-- Contenedor de reseñas -->
+        <div class="contenedor-resenas">
+          <!-- Reseña 1 -->
+          <article class="card tarjeta-resena-completa mb-4 shadow-sm">
+            <div class="card-body">
+              <div class="row principal-resena">
+                <!-- Portada -->
+                <div class="col-md-3">
+                  <div class="portada-libro-rec text-center">
+                    <img
+                      src="imagenes/sombraviento.png"
+                      alt="La sombra del viento"
+                      class="img-fluid marcador-libro"
+                      style="width: 180px"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-9 detalles-resena">
+                  <h2 class="mb-2">La Sombra del Viento</h2>
+                  <p class="autor-libro">Por Carlos Ruiz Zafón</p>
+                  <div class="estrellas-calificacion">⭐⭐⭐⭐⭐</div>
+
+                  <div class="etiquetas-libro mb-3">
+                    <span class="badge etiqueta">Ficción</span>
+                    <span class="badge etiqueta">Misterio</span>
+                    <span class="badge etiqueta">Romance</span>
+                  </div>
+
+                  <p class="texto-resena">
+                    <strong
+                      >Una obra maestra gótica en la Barcelona de
+                      posguerra.</strong
+                    >
+                    Carlos Ruiz Zafón nos regala una historia que es, en
+                    esencia, una carta de amor a los libros y la literatura.
+                  </p>
+                  <p class="texto-resena">
+                    Lo que más destaca es la atmósfera que Zafón crea: una
+                    Barcelona oscura, llena de secretos y pasadizos ocultos.
+                  </p>
+                  <p class="texto-resena">
+                    Los personajes están maravillosamente desarrollados,
+                    especialmente Fermín Romero de Torres.
+                  </p>
+                  <p class="texto-resena">
+                    <strong>Veredicto:</strong> Una lectura imprescindible para
+                    cualquier amante de los libros.
+                  </p>
+
+                  <div class="pie-resena mt-4">
+                    <span class="fecha-resena text-muted"
+                      >Reseñado el 15 de octubre, 2025</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Reseña 2 -->
+          <article class="card tarjeta-resena-completa mb-4 shadow-sm">
+            <div class="card-body">
+              <div class="row principal-resena">
+                <div class="col-md-3">
+                  <div class="portada-libro-rec text-center">
+                    <img
+                      src="imagenes/principito.png"
+                      alt="El principito"
+                      class="img-fluid marcador-libro"
+                      style="width: 180px"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-9 detalles-resena">
+                  <h2 class="mb-2">El Principito</h2>
+                  <p class="autor-libro">Por Antoine de Saint-Exupéry</p>
+                  <div class="estrellas-calificacion">⭐⭐⭐⭐⭐</div>
+
+                  <div class="etiquetas-libro mb-3">
+                    <span class="badge etiqueta">Clásico</span>
+                    <span class="badge etiqueta">Filosofía</span>
+                    <span class="badge etiqueta">Infantil/Adulto</span>
+                  </div>
+
+                  <p class="texto-resena">
+                    <strong
+                      >Un clásico que trasciende generaciones y
+                      culturas.</strong
+                    >
+                    Aunque se presenta como un libro infantil, "El Principito"
+                    es una profunda reflexión sobre la vida.
+                  </p>
+                  <p class="texto-resena">
+                    Saint-Exupéry utiliza la historia de un piloto varado en el
+                    desierto y su encuentro con un pequeño príncipe.
+                  </p>
+                  <p class="texto-resena">
+                    Las ilustraciones del propio autor complementan
+                    perfectamente el texto.
+                  </p>
+                  <p class="texto-resena">
+                    <strong>Veredicto:</strong> Una lectura breve pero profunda
+                    que merece ser releída.
+                  </p>
+
+                  <div class="pie-resena mt-4">
+                    <span class="fecha-resena text-muted"
+                      >Reseñado el 12 de octubre, 2025</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Reseña 3 -->
+          <article class="card tarjeta-resena-completa mb-4 shadow-sm">
+            <div class="card-body">
+              <div class="row principal-resena">
+                <div class="col-md-3">
+                  <div class="portada-libro-rec text-center">
+                    <img
+                      src="imagenes/colera.png"
+                      alt="El amor en los tiempos de colera"
+                      class="img-fluid marcador-libro"
+                      style="width: 160px"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-9 detalles-resena">
+                  <h2 class="mb-2">El Amor en los Tiempos del Cólera</h2>
+                  <p class="autor-libro">Por Gabriel García Márquez</p>
+                  <div class="estrellas-calificacion">⭐⭐⭐⭐⭐</div>
+
+                  <div class="etiquetas-libro mb-3">
+                    <span class="badge etiqueta">Romance</span>
+                    <span class="badge etiqueta">Clásico</span>
+                    <span class="badge etiqueta">Realismo Mágico</span>
+                  </div>
+
+                  <p class="texto-resena">
+                    <strong
+                      >Una historia de amor épica que desafía el tiempo.</strong
+                    >
+                    García Márquez nos presenta a Florentino Ariza, quien espera
+                    más de cincuenta años.
+                  </p>
+                  <p class="texto-resena">
+                    La prosa de Gabo es simplemente hipnótica. Cada oración está
+                    cuidadosamente construida.
+                  </p>
+                  <p class="texto-resena">
+                    Lo fascinante es cómo el autor retrata diferentes formas de
+                    amor.
+                  </p>
+                  <p class="texto-resena">
+                    <strong>Veredicto:</strong> Una obra maestra sobre el amor
+                    en todas sus formas.
+                  </p>
+
+                  <div class="pie-resena mt-4">
+                    <span class="fecha-resena text-muted"
+                      >Reseñado el 08 de octubre, 2025</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Reseña 4 -->
+          <article class="card tarjeta-resena-completa mb-4 shadow-sm">
+            <div class="card-body">
+              <div class="row principal-resena">
+                <div class="col-md-3">
+                  <div class="portada-libro-rec text-center">
+                    <img
+                      src="imagenes/sapienes.png"
+                      alt="Sapiens"
+                      class="img-fluid marcador-libro"
+                      style="width: 180px"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-9 detalles-resena">
+                  <h2 class="mb-2">Sapiens: De Animales a Dioses</h2>
+                  <p class="autor-libro">Por Yuval Noah Harari</p>
+                  <div class="estrellas-calificacion">⭐⭐⭐⭐☆</div>
+
+                  <div class="etiquetas-libro mb-3">
+                    <span class="badge etiqueta">No Ficción</span>
+                    <span class="badge etiqueta">Historia</span>
+                    <span class="badge etiqueta">Filosofía</span>
+                  </div>
+
+                  <p class="texto-resena">
+                    <strong
+                      >Una perspectiva fascinante sobre la historia de la
+                      humanidad.</strong
+                    >
+                    Harari nos lleva en un viaje desde la evolución del Homo
+                    sapiens.
+                  </p>
+                  <p class="texto-resena">
+                    Lo más impactante del libro es cómo Harari explica conceptos
+                    complejos de manera accesible.
+                  </p>
+                  <p class="texto-resena">
+                    El libro está dividido en cuatro partes: la Revolución
+                    Cognitiva, la Revolución Agrícola.
+                  </p>
+                  <p class="texto-resena">
+                    <strong>Veredicto:</strong> Un libro que todos deberían leer
+                    al menos una vez.
+                  </p>
+
+                  <div class="pie-resena mt-4">
+                    <span class="fecha-resena text-muted"
+                      >Reseñado el 03 de octubre, 2025</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Reseña 5 -->
+          <article class="card tarjeta-resena-completa mb-4 shadow-sm">
+            <div class="card-body">
+              <div class="row principal-resena">
+                <div class="col-md-3">
+                  <div class="portada-libro-rec text-center">
+                    <img
+                      src="imagenes/detectives.png"
+                      alt="Los detectives salvajes"
+                      class="img-fluid marcador-libro"
+                      style="width: 180px"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-9 detalles-resena">
+                  <h2 class="mb-2">Los Detectives Salvajes</h2>
+                  <p class="autor-libro">Por Roberto Bolaño</p>
+                  <div class="estrellas-calificacion">⭐⭐⭐⭐⭐</div>
+
+                  <div class="etiquetas-libro mb-3">
+                    <span class="badge etiqueta">Ficción</span>
+                    <span class="badge etiqueta">Poesía</span>
+                    <span class="badge etiqueta">Aventura Literaria</span>
+                  </div>
+
+                  <p class="texto-resena">
+                    <strong
+                      >Una novela ambiciosa sobre la búsqueda de la
+                      poesía.</strong
+                    >
+                    Bolaño crea una estructura narrativa única.
+                  </p>
+                  <p class="texto-resena">
+                    La novela está dividida en tres partes, con la sección
+                    central compuesta por más de 50 testimonios.
+                  </p>
+                  <p class="texto-resena">
+                    No es una lectura fácil. Bolaño no tiene piedad con el
+                    lector.
+                  </p>
+                  <p class="texto-resena">
+                    <strong>Veredicto:</strong> Una obra maestra moderna que
+                    requiere compromiso y paciencia.
+                  </p>
+
+                  <div class="pie-resena mt-4">
+                    <span class="fecha-resena text-muted"
+                      >Reseñado el 28 de septiembre, 2025</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
